@@ -10,8 +10,32 @@
 
     <title>Andrew-miller by AMiller90</title>
   </head>
-
   <body>
+  
+  <p>Click on the links inside the tabbed menu:</p>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+</ul>
+
+<div id="Contact" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Contact Info</h3>
+  <section id="Links">
+		<p>Links</p>
+          <a href="https://github.com/AMiller90" class="btn btn-github"><span class="icon"></span>GitHub</a>
+		  <a href="https://www.linkedin.com/in/andrew-miller-6042a4121" class="btn btn-linkedin"><span class="icon"></span>Linked-In</a>
+		  <a href="https://resume.creddle.io/resume/f4yng1pgd4a" class="btn">Resume</a>
+		  <a href="https://gist.github.com/AMiller90" class="btn">Gists</a>
+  </section>
+</div>
+
+<div id="Paris" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Under Construction</h3>
+  <p>Under Construction</p>
+</div>
 
     <header>
 	<div class="container">
@@ -23,14 +47,8 @@
 		<a href="https://github.com/AMiller90/Partner-Projects/archive/master.zip" class="btn">Partner Project</a>
 		</section>
 		
-        <section id="Links">
-		<p>Links</p>
-          <a href="https://github.com/AMiller90" class="btn btn-github"><span class="icon"></span>GitHub</a>
-		  <a href="https://www.linkedin.com/in/andrew-miller-6042a4121" class="btn btn-linkedin"><span class="icon"></span>Linked-In</a>
-		  <a href="https://resume.creddle.io/resume/f4yng1pgd4a" class="btn">Resume</a>
-		  <a href="https://gist.github.com/AMiller90" class="btn">Gists</a>
-        </section>		
-    </header>
+	
+	</header>
 
     <div class="container">
       <section id="main_content">
@@ -62,6 +80,22 @@
       </section>
     </div>
 
-    
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
   </body>
 </html>
