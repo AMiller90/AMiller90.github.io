@@ -12,17 +12,22 @@
   </head>
   <body>
   
-  <p>Click on the links inside the tabbed menu:</p>
+  <header>
+	<div class="container">
+        <h1>Andrew Miller</h1>
+	</header>
 
 <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')">Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</a></li>
 </ul>
 
 <div id="Contact" class="tabcontent">
 <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
   <h3>Contact Info</h3>
   <section id="Links">
+  <p>Email:A_Miller729@yahoo.com</p>
 		<p>Links</p>
           <a href="https://github.com/AMiller90" class="btn btn-github"><span class="icon"></span>GitHub</a>
 		  <a href="https://www.linkedin.com/in/andrew-miller-6042a4121" class="btn btn-linkedin"><span class="icon"></span>Linked-In</a>
@@ -42,51 +47,28 @@
   <p>Pong made in unity. 1 - 2 Player capability. Use the keyboard W,A,S,D Keys for Player 1 Movement, Use the Up,Down,Left, and Right arrow keys for Player 2 movement.</p>
   </div>
 
-    <header>
-	<div class="container">
-        <h1>Andrew Miller</h1>
-        <h2>Website</h2>
-		
-		<section id="Downloads">
-		<p>Zip Files For Download</p>
-		<a href="https://github.com/AMiller90/Partner-Projects/archive/master.zip" class="btn">Partner Project</a>
-		</section>
-		
-	
-	</header>
+<div id="Downloads" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+	<h3>Downloads</h3>
+	<section id="Downloads">
+	<p>Zip Files For Download</p>
+	<a href="https://github.com/AMiller90/Partner-Projects/archive/master.zip" class="btn">Partner Project</a>
+	</section>
+</div>
 
-    <div class="container">
+
+	<div class="container2">
       <section id="main_content">
-<h3>
-<a id="Year 1 Final Project" class="anchor" href="Year 1 Final Project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><FSize>Year 1 Final Project</FSize></h3>
-<a href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
-<p>3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
-
-<h3>
-<a id="Unity Pong" class="anchor" href="Unity Pong" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><FSize>Unity Pong</FSize></h3>
-<a href="https://amiller90.github.io/FunProject/" class="btn">Unity Pong</a>
-<p>Pong made in unity. 1 - 2 Player capability. Use the keyboard W,A,S,D Keys for Player 1 Movement, Use the Up,Down,Left, and Right arrow keys for Player 2 movement.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-<p>"We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
+	  <p>I am a current second year student at the Academy of Enteractive Entertainment-Lafayette(<a href="http://www.theaie.us/Campuses/Lafayette" class="user-mention">@AIE</a>). Pursuing the Advanced Diploma in Game Programming.</p>
+	  <p>This website hosts projects I have created both alone and in teams through my programming career.</p>
+	  <p>My interests are in the problem solving aspect of programming. Being given a problem and asked to solve it based on specified requirements.
+		 There will always be a learning outcome to accepting a project which leads to further growth and knowledge out in the field.</p>		
+		<img src="images/code.png" alt="Code Is Poetry" style="width:304px;height:228px;">
+	</section>
     </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -96,7 +78,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../images/code.png") 0 0;
+  background: url("../images/bkg.png") 0 0;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   background-size: cover; 
@@ -16,8 +16,13 @@ body {
 .container {
   width: 90%;
   max-width: 600px;
+}
+
+.container2 {
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
-  border-bottom: thick solid #b5e853;
+  font-size: 20px;
 }
 
 section {
@@ -50,7 +55,7 @@ header h1 {
 	
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 0;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -58,6 +63,7 @@ header h1 {
                0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
+  //border-bottom: thick solid #b5e853;
   
   //animation-name: colorChange;
   //animation-duration: 5s;
@@ -77,6 +83,7 @@ header h2 {
   font-weight: 300;
   color: #eaeaea;  
   opacity: 0.6;
+  margin: 0 0 0 0;
 }
 
 #downloads .btn {
@@ -91,6 +98,7 @@ header h2 {
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
 }
 
 section img {
@@ -146,7 +154,7 @@ ul li {
 }
 
 ul li:before {
-  content: ">>";
+  content: "";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
   color: #b5e853;
