@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Andrew-miller by AMiller90</title>
+  </head>
+  <body>
+  
+  <header>
+	<div class="container">
+        <h1>Andrew Miller</h1>
+	</header>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')">Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</a></li>
+  <p><<<< Choose a tab</p>
+</ul>
+
+<div id="Contact" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Contact Info</h3>
+  <section id="Links">
+  <p>Email:A_Miller729@yahoo.com</p>
+		<p>Links</p>
+          <a href="https://github.com/AMiller90" class="btn btn-github"><span class="icon"></span>GitHub</a>
+		  <a href="https://www.linkedin.com/in/andrew-miller-6042a4121" class="btn btn-linkedin"><span class="icon"></span>Linked-In</a>
+		  <a href="https://resume.creddle.io/resume/f4yng1pgd4a" class="btn">Resume</a>
+		  <a href="https://gist.github.com/AMiller90" class="btn">Gists</a>
+  </section>
+</div>
+
+<div id="Projects" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Year 1 Project</h3>
+  <img src="images/Year1FinalProject.png" alt="Finalproject" style="width:400px;height:300px;">
+  <a href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
+  <p>3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
+
+  <h3>Unity Pong</h3>
+  <img src="images/Pong.png" alt="Pong" style="width:400px;height:300px;">
+  <a href="https://amiller90.github.io/FunProject/" class="btn">Unity Pong</a>
+  <p>Pong made in unity. 1 - 2 Player capability. Use the keyboard W,A,S,D Keys for Player 1 Movement, Use the Up,Down,Left, and Right arrow keys for Player 2 movement.</p>
+  
+  <h3>Boids</h3>
+  <img src="images/Boids.png" alt="Boids" style="width:400px;height:300px;">
+  <a href="https://amiller90.github.io/Boids/" class="btn">Boids</a>
+  <p>Boids Algorithm is an algorithm that simulates the flocking behaviour of birds.
+	 Cohesion is the steering of an object towards the average position of local flockmates.
+	 Alignment is the steering towards the average heading of local flockmates.
+	 Seperation is the steering to avoid crowding local flockmates.
+	 When running the program, using the corresponding sliders on screen, you can alter the specific behaviour of the objects.</p>
+  
+  <h3>Cloth Simulation</h3>
+  <img src="images/ClothSim.png" alt="ClothSim" style="width:400px;height:300px;">
+  <a href="https://amiller90.github.io/Cloth-Simulation/" class="btn">Cloth-Simulation</a>
+  <p>Cloth Simulation is simulation of soft body physics, with respect to the use of forces on given particles to give it the soft body like behavior.
+	 There are 3 Steps in the process of cloth simulation:
+	 Apply Gravity - Apply gravity to each of the particles respectively.
+	 Apply Forces to the Spring Dampers - The spring damper is the “connector” of one particle to another. You must apply the proper spring damper forces to each of the particles in a given spring damper. The spring constant is how stiff the spring is, The damping factor is how fast or slow the spring comes to rest and the rest length is the resting position. The force equations used in this are Hook’s Law and Newton’s 2nd Law.
+	 Apply Aerodynamic Force - This adds a wind effect to the particles making up a given triangle. </p>
+  </div>
+
+<div id="Downloads" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+	<h3>Downloads</h3>
+	<section id="Downloads">
+	<p>Zip Files For Download</p>
+	<a href="https://github.com/AMiller90/MathLibraryCPlusPlus/archive/master.zip" class="btn">C++ Math Library</a>
+	<p> Math Library in C++. Click link to download the folder. Read the Readme file inside the downloaded folder 
+	for instructions on how to link, use and understand the contents of the library.
+	</section>
+</div>
+
+
+	<div class="container2">
+      <section id="main_content">
+	  <br/>
+	  <img src="images/WebPic.png" alt="Me" style="width:300px;height:300px;">
+	  <p>I am a current second year student at the Academy of Enteractive Entertainment-Lafayette(<a href="http://www.theaie.us/Campuses/Lafayette" class="user-mention">@AIE</a>). Pursuing the Advanced Diploma in Game Programming.</p>
+	  <p>This website hosts projects I have created both alone and in teams through my programming career.</p>
+	  <p>My interests are in the problem solving aspect of programming. Being given a problem and asked to solve it based on specified requirements.
+		 There will always be a learning outcome to accepting a project which leads to further growth and knowledge out in the field.</p>		
+	</section>
+    </div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+  </body>
+</html>
