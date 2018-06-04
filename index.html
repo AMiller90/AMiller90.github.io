@@ -22,7 +22,6 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Industry')">Industry</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Support')">Support</a></li>
   <p><b><i><<<< Choose a tab</p></b></i>
 </ul>
 
@@ -74,6 +73,12 @@
   <a href="https://github.com/AMiller90/OperationVega/releases/download/Alpha1/OperationVega.zip" class="btn">Operation Vega</a>
   <p>Operation Vega is a Sci-Fi game based in space on an abandoned planet. The goal is to build a rocket using crafted resources, and get off of the planet. There are resources to gather, 
      units to control, and enemies waiting to stop you from getting off the planet!</p>
+  
+  <h3>TicTacToe</h3>
+  <img src="images/TicTacToe.png" alt="TicTacToe" style="width:300px;height:300px;">
+  <a href="https://github.com/AMiller90/TicTacToe/releases/download/v1/TicTacToe.zip" class="btn">TicTacToe</a>
+  <p>TicTacToe in Java! Choose anywhere from a grid size of 3x3 to 10x10 and even try against the AI!</p>
+	 
   </div>
 
 <div id="Downloads" class="tabcontent">
@@ -104,15 +109,6 @@
 	 </section>
 </div>  
 
-<div id="Support" class="tabcontent">
-<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
-  <h3>Show Support</h3>
-  <section id="Links">
-        <a title="Donate" href="http://paypal.me/AMiller1990" class="btn" target="_blank">Pay Pal</a>
-		<a title="Give Gifts" href="https://www.amazon.com/registry/wishlist/B545NDMGVYRC" class="btn" target="_blank">Amazon Wishlist</a>
-  </section>
-</div>
-
 <div class="container2">
     <section id="main_content">
 	<br/>
@@ -131,14 +127,13 @@ function openTab(evt, tabName) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+    //tablinks = document.getElementsByClassName("tablinks");
+    //for (i = 0; i < tablinks.length; i++) {
+        //tablinks[i].className = tablinks[i].className.replace(" active", "");
+    //}
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    //evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
 </script>
 
   </body>
