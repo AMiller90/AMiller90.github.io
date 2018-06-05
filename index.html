@@ -14,7 +14,8 @@
   
   <header>
 	<div class="container">
-        <h1>Andrew Miller</h1>
+		<h1>Andrew Miller</h1>
+	</div>
   </header>
   
 <ul class="tab">
@@ -22,7 +23,6 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Industry')">Industry</a></li>
-  <p><b><i><<<< Choose a tab</p></b></i>
 </ul>
 
 <div id="Contact" class="tabcontent">
@@ -39,15 +39,15 @@
 </div>
 
 <div id="Projects" class="tabcontent">
-<span onclick="this.parentElement.style.display='none'" class="topright">x</span> 
-
-  <div class="Scroll">
-	<img id="projectImg" src="images/Year1FinalProject.png" alt="Finalproject" style="width:400px;height:300px;">
-	<button onclick="arrowClick('Left')" class="btn"><</button>
-	<a id="projectLink" href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
-	<button onclick="arrowClick('Right')" class="btn">></button>
-	<p id="projectDescription">3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
-  </div>
+ <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+	<section class="Scroll">
+		<img id="projectImg" src="images/Year1FinalProject.png" alt="Finalproject" style="width:400px;height:300px;">
+		<button onclick="arrowClick('Left')" class="btn">-</button>
+		<a id="projectLink" href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
+		<button onclick="arrowClick('Right')" class="btn">+</button>
+		<p id="projectDescription">3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
+	</section>
+</div>
 
   <!-- <h3>Unity Pong</h3>
   <img src="images/Pong.png" alt="Pong" style="width:400px;height:300px;">
@@ -87,20 +87,20 @@
   <a href="https://github.com/AMiller90/TicTacToe/releases/download/v1/TicTacToe.zip" class="btn">TicTacToe</a>
   <p>TicTacToe in Java! Choose anywhere from a grid size of 3x3 to 10x10 and even try against the AI!</p>	 
   -->
-  </div>
+  
 
 <div id="Downloads" class="tabcontent">
 <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
 	<section id="Downloads">
 	<h3>Zip Files For Download</h3>
 	<a href="https://github.com/AMiller90/MathLibraryCPlusPlus/archive/master.zip" class="btn">C++ Math Library</a>
-	<p> Math Library in C++. Click link to download the folder. Read the Readme file inside the downloaded folder 
-	for instructions on how to link, use and understand the contents of the library.</p>
+	<p>Math Library in C++. Click link to download the folder. Read the Readme file inside the downloaded folder</p>
+	<p>for instructions on how to link, use and understand the contents of the library.</p>
 	
 	<a href="https://github.com/AMiller90/GeneticAlgorithm/releases/download/GeneticAlgorithm/GeneticAlgorithm.zip" class="btn">Genetic Algorithm</a>
-	<p> A Genetic Algorithm is a method for solving both constrained and unconstrained optimization problems based on a natural selection process 
-	that mimics biological evolution. The algorithm repeatedly modifies a population of individual solutions. This was developed in python and there is an
-	executable file inside the downloaded zip file and all documentation to get you started.</p>
+	<p>A Genetic Algorithm is a method for solving both constrained and unconstrained optimization problems based on a natural selection process</p>
+	<p>that mimics biological evolution. The algorithm repeatedly modifies a population of individual solutions. This was developed in python and there is an</p>
+	<p>executable file inside the downloaded zip file and all documentation to get you started.</p>
 	</section>
 </div>
 
@@ -110,11 +110,11 @@
   <h3>Cyberpunk Casanova</h3>
   <img src="images/CyberpunkCasanovaCover.png" alt="Cyberpunk Casanova" style="width:400px;height:200px;">
   <a href="https://jetstreame.itch.io/cyberpunk-casanova" class="btn" target="_blank">CCKickstarter</a>
-  <p>A Visual Novel game built in Unity, with a great story! The kickstarter will be launched in july and it is currently seeking backers, so don't forget to sign up for the thunder clap!</p><b></b>
-  <p>I was given the opportunity to be the lead programmer for this project in helping the team get the demo built and ready for playing at E3!</p><b></b>
-  <p>Clicking the button above will send you to the kickstarter page where you can download the demo!</p><b></b>
-  <p> So...Are you a Lover, Fighter, Manipulator, or Pawn? #CyberpunkCasanova</p>
-	 </section>
+  <p>A Visual Novel game built in Unity, with a great story! The kickstarter will be launched in july and it is currently seeking backers, so don't forget to sign up for the thunder clap!</p>
+  <p>I was given the opportunity to be the lead programmer for this project in helping the team get the demo built and ready for playing at E3!</p>
+  <p>Clicking the button above will send you to the kickstarter page where you can download the demo!</p>
+  <p>So...Are you a Lover, Fighter, Manipulator, or Pawn? #CyberpunkCasanova</p>
+  </section>
 </div>  
 
 <div class="container2">
@@ -124,10 +124,11 @@
 	<p>I am a graduate of the Academy of Interactive Entertainment-Lafayette(<a href="http://www.theaie.us/Campuses/Lafayette" class="user-mention">@AIE</a>) and have received my Advanced Diploma in Game Programming.</p>
 	<p>This website hosts projects I have created both alone and in teams through my programming career.</p>
 	<p>My interests are in the problem solving aspect of programming. Being given a problem and asked to solve it based on specified requirements.</p>
-	   There will always be a learning outcome to accepting a project which leads to further growth and knowledge out in the field.</p>		
+	<p>There will always be a learning outcome to accepting a project which leads to further growth and knowledge out in the field.</p>		
 	</section>
 </div>
 
 <script src="javascripts/Main.js"></script>
+
   </body>
 </html>
