@@ -6,8 +6,8 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">	
+	
     <title>Andrew-miller by AMiller90</title>
   </head>
   <body>
@@ -39,18 +39,23 @@
 </div>
 
 <div id="Projects" class="tabcontent">
-<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
-  <h3>Year 1 Project</h3>
-  <img src="images/Year1FinalProject.png" alt="Finalproject" style="width:400px;height:300px;">
-  <a href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
-  <p>3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
+<span onclick="this.parentElement.style.display='none'" class="topright">x</span> 
 
-  <h3>Unity Pong</h3>
+  <div class="Scroll">
+	<img id="projectImg" src="images/Year1FinalProject.png" alt="Finalproject" style="width:400px;height:300px;">
+	<button onclick="arrowClick('Left')" class="btn"><</button>
+	<a id="projectLink" href="http://amiller90.github.io/ADGP-115/" class="btn">Year 1 Project</a>
+	<button onclick="arrowClick('Right')" class="btn">></button>
+	<p id="projectDescription">3-D Tower Defense Game built in Unity using C# Scripting. The object of the game is to defeat all waves of enemies without dying. This game was developed with a few fellow classmates in a 6 week time span. There are different types of behavior patterns implemented into the game. The Singleton Pattern and Publisher and Subscriber pattern.</p>
+  </div>
+
+  <!-- <h3>Unity Pong</h3>
   <img src="images/Pong.png" alt="Pong" style="width:400px;height:300px;">
   <a href="https://amiller90.github.io/FunProject/" class="btn">Unity Pong</a>
   <p>Pong made in unity. 1 - 2 Player capability. Use the keyboard W,A,S,D Keys for Player 1 Movement, Use the Up,Down,Left, and Right arrow keys for Player 2 movement.</p>
+  -->
   
-  <h3>Boids</h3>
+  <!-- <h3>Boids</h3>
   <img src="images/Boids.png" alt="Boids" style="width:400px;height:300px;">
   <a href="https://amiller90.github.io/Boids/" class="btn">Boids</a>
   <p>Boids Algorithm is an algorithm that simulates the flocking behaviour of birds.
@@ -58,8 +63,9 @@
 	 Alignment is the steering towards the average heading of local flockmates.
 	 Seperation is the steering to avoid crowding local flockmates.
 	 When running the program, using the corresponding sliders on screen, you can alter the specific behaviour of the objects.</p>
+  -->
   
-  <h3>Cloth Simulation</h3>
+  <!-- <h3>Cloth Simulation</h3>
   <img src="images/ClothSim.png" alt="ClothSim" style="width:400px;height:300px;">
   <a href="https://amiller90.github.io/Cloth-Simulation/" class="btn">Cloth-Simulation</a>
   <p>Cloth Simulation is simulation of soft body physics, with respect to the use of forces on given particles to give it the soft body like behavior.
@@ -67,17 +73,20 @@
 	 Apply Gravity - Apply gravity to each of the particles respectively.
 	 Apply Forces to the Spring Dampers - The spring damper is the “connector” of one particle to another. You must apply the proper spring damper forces to each of the particles in a given spring damper. The spring constant is how stiff the spring is, The damping factor is how fast or slow the spring comes to rest and the rest length is the resting position. The force equations used in this are Hook’s Law and Newton’s 2nd Law.
 	 Apply Aerodynamic Force - This adds a wind effect to the particles making up a given triangle. </p>
+  -->
   
-  <h3>Operation Vega</h3>
+  <!-- <h3>Operation Vega</h3>
   <img src="images/ParticleGaze.png" alt="OperationVega" style="width:300px;height:291px;">
   <a href="https://github.com/AMiller90/OperationVega/releases/download/Alpha1/OperationVega.zip" class="btn">Operation Vega</a>
   <p>Operation Vega is a Sci-Fi game based in space on an abandoned planet. The goal is to build a rocket using crafted resources, and get off of the planet. There are resources to gather, 
      units to control, and enemies waiting to stop you from getting off the planet!</p>
+  -->
   
-  <h3>TicTacToe</h3>
+  <!-- <h3>TicTacToe</h3>
   <img src="images/TicTacToe.png" alt="TicTacToe" style="width:400px;height:300px;">
   <a href="https://github.com/AMiller90/TicTacToe/releases/download/v1/TicTacToe.zip" class="btn">TicTacToe</a>
   <p>TicTacToe in Java! Choose anywhere from a grid size of 3x3 to 10x10 and even try against the AI!</p>	 
+  -->
   </div>
 
 <div id="Downloads" class="tabcontent">
@@ -119,21 +128,6 @@
 	</section>
 </div>
 
-<script>
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
+<script src="javascripts/Main.js"></script>
   </body>
 </html>

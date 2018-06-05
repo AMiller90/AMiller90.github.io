@@ -13,6 +13,18 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.Scroll {
+	text-align:center;
+}
+
+.Scroll .btn{
+	margin:10px;
+}
+.Scroll img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
 .container {
   width: 90%;
   max-width: 600px;
