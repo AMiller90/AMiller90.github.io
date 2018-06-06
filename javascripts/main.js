@@ -36,10 +36,6 @@ function openTab(evt, tabName) {
 
 function arrowClick(direction)
 {
-	//var file = JSON.stringify(projects[0]);
-	//var obj = JSON.parse(file);
-	
-	//alert(obj.name + " " + obj.description);
 	if(direction == "Left")
 		i--;
 	else if(direction == "Right")
