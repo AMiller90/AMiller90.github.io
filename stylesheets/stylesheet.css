@@ -273,6 +273,11 @@ hr {
   background: url("../images/Linkedin.png") 0 0 no-repeat;
 }
 
+.btn-cross .icon {
+  opacity: 0.6;
+  background: rgba(234,234,234,1) url("../images/Cross.png") 0 0 no-repeat;
+}
+
 /* Links
    a, a:hover, a:visited
 */
