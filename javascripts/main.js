@@ -34,8 +34,8 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-function arrowClick(direction)
-{
+function arrowClick(direction){
+	
 	if(direction == "Left")
 		i--;
 	else if(direction == "Right")
@@ -56,4 +56,10 @@ function arrowClick(direction)
 	linkS.text = projects[i].name;	
 	desc.innerHTML = projects[i].description;
 	image.src = projects[i].imgPath;
+}
+
+function ContactLinkButtonClick(path)
+{
+	window.open(path, '_blank');
+	
 }

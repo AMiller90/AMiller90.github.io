@@ -3,11 +3,46 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">	
   	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="javascripts/main.js"></script>
+	
+	
+	<script>
+		$(document).ready(function(){
+		  $("#GitHubButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://github.com/AMiller90', '_blank');
+		  });
+		  $("#LinkedInButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://www.linkedin.com/in/andrew-miller-6042a4121', '_blank');
+		  });
+		  $("#ResumeButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('Resume.pdf', '_blank');
+		  });
+		  $("#GistsButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://gist.github.com/AMiller90', '_blank');
+		  });
+		  $("#YoutTubeButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://www.youtube.com/channel/UC28AeQTC5RVMPMBQhW-gTOA', '_blank');
+		  });
+		  $("#MathLibraryButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://github.com/AMiller90/MathLibraryCPlusPlus/archive/master.zip');
+		  });
+		  $("#GeneticAlgorithmButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://github.com/AMiller90/GeneticAlgorithm/releases/download/GeneticAlgorithm/GeneticAlgorithm.zip');
+		  });
+		  $("#CyberPunkButton").removeAttr('href').css('cursor', 'pointer').click(function(){
+			window.open('https://jetstreame.itch.io/cyberpunk-casanova');
+		  });
+		});
+	</script>
+
     <title>Andrew-miller by AMiller90</title>
   </head>
  <body>
@@ -19,24 +54,23 @@
   </header>
   
 <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')">Contact</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Industry')">Industry</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')">&nbsp;Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">&nbsp;Projects</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Downloads')">&nbsp;Downloads</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Industry')">&nbsp;Industry</a></li>
 </ul>
 
 <div id="Contact" class="tabcontent">
-<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
   <h3>Contact Info</h3>
   <section id="Links">
-  <p>Email:A_Miller729@yahoo.com</p>
-		<p>Links</p>
-          <a href="https://github.com/AMiller90" class="btn btn-github" target="_blank"><span class="icon"></span>GitHub</a>
-		  <a href="https://www.linkedin.com/in/andrew-miller-6042a4121" class="btn btn-linkedin" target="_blank"><span class="icon"></span>Linked-In</a>
-		  <a href="https://resume.creddle.io/resume/f4yng1pgd4a" class="btn btn-cross" target="_blank"><span class="icon"></span>Resume</a>
-		  <a href="https://gist.github.com/AMiller90" class="btn btn-cross" target="_blank"><span class="icon"></span>Gists</a>
-  		  <a href="https://www.youtube.com/channel/UC28AeQTC5RVMPMBQhW-gTOA" class="btn btn-cross" target="_blank"><span class="icon"></span>YouTube</a>
-</section>
+	<p>&nbsp;Links</p>
+	<a href="#" id="GitHubButton" class="btn btn-github"><span class="icon"></span>GitHub</a>
+	<a href="#" id="LinkedInButton" class="btn btn-linkedin"><span class="icon"></span>Linked-In</a>
+	<a href="#" id="ResumeButton" class="btn btn-cross"><span class="icon"></span>Resume</a>
+	<a href="#" id="GistsButton" class="btn btn-cross"><span class="icon"></span>Gists</a>
+	<a href="#" id="YoutTubeButton" class="btn btn-cross"><span class="icon"></span>YouTube</a>
+  </section>
 </div>
 
 <div id="Projects" class="tabcontent">
@@ -54,12 +88,12 @@
 <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
 	<section id="Downloads">
 	<h3>Zip Files For Download</h3>
-	<a href="https://github.com/AMiller90/MathLibraryCPlusPlus/archive/master.zip" class="btn">C++ Math Library</a>
+	<a id="MathLibraryButton" href="#" class="btn">C++ Math Library</a>
 	<p>Math Library in C++. Click link to download the folder.<br>
 	   Read the Readme file inside the downloaded folder
 	   for instructions on how to link, use and understand the contents of the library.</p>
 	
-	<a href="https://github.com/AMiller90/GeneticAlgorithm/releases/download/GeneticAlgorithm/GeneticAlgorithm.zip" class="btn">Genetic Algorithm</a>
+	<a id="GeneticAlgorithmButton" href="#" class="btn">Genetic Algorithm</a>
 	<p>A Genetic Algorithm is a method for solving both constrained and unconstrained optimization problems based on a natural selection process
 	that mimics biological evolution.<br> The algorithm repeatedly modifies a population of individual solutions. This was developed in python and there is an
 	executable file inside the downloaded zip file and all documentation to get you started.</p>
@@ -71,7 +105,7 @@
   <section id="Industry">
   <h3>Cyberpunk Casanova</h3>
   <img src="images/CyberpunkCasanovaCover.png" alt="Cyberpunk Casanova" style="width:400px;height:200px;">
-  <a href="https://jetstreame.itch.io/cyberpunk-casanova" class="btn" target="_blank">CCKickstarter</a>
+  <a id="CyberPunkButton" href="#" class="btn">CCKickstarter</a>
   <p>A Visual Novel game built in Unity, with a great story!<br>
 	 I was given the opportunity to be the lead programmer for a few months and helped the team get the demo built and ready for playing at E3 2017!<br>
 	 Clicking the button above will send you to the kickstarter page where you can download the demo!<br>
@@ -83,13 +117,21 @@
     <section id="main_content">
 	<br>
 	<img src="images/WebPic.png" alt="Me" style="width:300px;height:300px;display:block;margin-left:auto; margin-right:auto;">
-	<p style="text-align:center;">I am a graduate of the Academy of Interactive Entertainment-Lafayette(<a href="http://www.theaie.us/Campuses/Lafayette" class="user-mention">@AIE</a>) and have received my Advanced Diploma in Game Programming.<br>
+	<p style="text-align:center;">I am a graduate of the Academy of Interactive Entertainment-Lafayette(<a href="https://aie.edu/" class="user-mention" target="_blank">@AIE</a>) and have received my Advanced Diploma in Game Programming.<br>
 	   This website hosts projects I have created both alone and in teams through my programming career.<br>
 	   My interests are in the problem solving aspect of programming. Being given a problem and asked to solve it based on specified requirements.<br>
 	   There will always be a learning outcome to accepting a project which leads to further growth and knowledge out in the field.</p>		
 	</section>
 </div>
 
-<script src="javascripts/main.js"></script>
+<script>
+	$(document.ready(function(){
+		
+		//var button = document.getElementById('Test');
+		alert(button);
+		
+	});
+
+</script>
   </body>
 </html>
