@@ -21,6 +21,13 @@ var project6 = new Project("TicTacToe","images/TicTacToe.png","https://github.co
 var projects = [project1,project2,project3,project4,project5,project6];
 
 function openTab(evt, tabName) {
+
+		if (document.getElementById(tabName).style.display == "block")
+		{
+			document.getElementById(tabName).style.display = "none";
+			evt.currentTarget.className = evt.currentTarget.className.replace(" active", "");
+			return;
+		}
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -35,25 +42,25 @@ function openTab(evt, tabName) {
 }
 
 function arrowClick(direction){
-	
+
 	if(direction == "Left")
 		i--;
 	else if(direction == "Right")
 		i++;
-	
+
 	if(i < 0)
 		i = projects.length -1;
 	else if(i > projects.length -1)
 		i = 0;
-	
+
 	var linkS, image, desc;
-		
+
 	linkS = document.getElementById('projectLink');
 	desc = document.getElementById('projectDescription');
 	image = document.getElementById('projectImg');
-	
+
 	linkS.href = projects[i].link;
-	linkS.text = projects[i].name;	
+	linkS.text = projects[i].name;
 	desc.innerHTML = projects[i].description;
 	image.src = projects[i].imgPath;
 }

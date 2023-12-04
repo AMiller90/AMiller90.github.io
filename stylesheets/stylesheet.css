@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: url("../images/bkg.png") 0 0;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   color: rgba(234,234,234,1);
   font: 16px;
   line-height: 1.5;
@@ -13,14 +13,14 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.Scroll {
+.Projects {
 	text-align:center;
 }
 
-.Scroll .btn{
+.Projects .btn{
 	margin:10px;
 }
-.Scroll img{
+.Projects img{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -64,7 +64,7 @@ header {
 }
 
 header h1 {
-	
+
   font-size: 30px;
   line-height: 1.5;
   margin: 0 0 0 0;
@@ -76,7 +76,7 @@ header h1 {
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
   //border-bottom: thick solid #b5e853;
-  
+
   //animation-name: colorChange;
   //animation-duration: 5s;
   //animation-timing-function: linear;
@@ -93,7 +93,7 @@ header h1:before {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #eaeaea;  
+  color: #eaeaea;
   opacity: 0.6;
   margin: 0 0 0 0;
 }
@@ -161,20 +161,6 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style: none;
-}
-
-ul li:before {
-  content: "";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
-}
-
 blockquote {
   color: #aaa;
   padding-left: 10px;
@@ -240,19 +226,6 @@ hr {
 }
 
 .btn:hover {
-	
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(10);
-  transform: translateZ(10);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
   background: rgba(181, 232, 83, 0.8);
   color: black;
 }
@@ -324,7 +297,9 @@ ul.tab {
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left;}
+ul.tab li {
+    float: left;
+}
 
 /* Style the links inside the list items */
 ul.tab li a {
@@ -338,10 +313,10 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: blue;}
+ul.tab li a:hover {background-color: #04AA6D;}
 
 /* Create an active/current tablink class */
-//ul.tab li a:focus, .active {background-color: #ccc;}
+ul.tab li .active {background-color: #04AA6D;}
 
 /* Style the tab content */
 .tabcontent {
